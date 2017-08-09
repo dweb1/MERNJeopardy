@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "dev": "concurrently 'nodemon server.js' 'cd client && yarn start'",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/dweb1/MERNJeopardy#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "concurrently": "^3.5.0",
     "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "mongoose": "^4.11.6"
