@@ -3,18 +3,18 @@ var Schema = mongoose.Schema;
 
 mongoose.Promise = global.Promise;
 
-var Question = new Schema({
+var QuestionSchema = new Schema({
     value: Number,
     question: String,
     answer: String
 })
 
-var Category = new Schema({
+var CategorySchema = new Schema({
     name: String,
     questions: [QuestionSchema]
 })
 
-var Game = new Schema({
+var GameSchema = new Schema({
     user: String,
     points: Number,
     board: [Boolean],
